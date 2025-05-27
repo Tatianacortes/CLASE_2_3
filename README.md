@@ -87,11 +87,86 @@ $$
 J_{ref} = \frac{m}{N_s^2}
 $$
 
+![Figura de prueba](IMAGES/tornillo.png)
+
+#### Inercia total
+
+**Masa total:**
+
+$$
+m=\frac{W_L+W_C}{g}
+$$
+
+**Inercia reflejada del sistema (tornillo, carga y carro):**
+
+$$
+J_{ref}^{trans}=J_{screw}+J_{load\rightarrow in}+J_{carriage\rightarrow in}
+$$
+
+Donde:
+
+$$
+J_{ref}^{trans}=J_{screw}+\frac{1}{\eta N_S^2}\left(\frac{W_L+W_C}{g}\right)
+$$
 
 
-### Torque Reflejado
+
+### Torque de carga
 
 El torque reflejado depende de la fuerza ejercida sobre la cápsula o carro.
+
+![Figura de prueba](IMAGES/tornillo0.png)
+**Fuerzas aplicadas en el sistema:**
+
+$$
+F_{ext}=F_f+F_g+F_p
+$$
+
+Donde:
+
+$$
+F_f=\mu(W_L+W_C)\cos\beta
+$$
+
+$$
+F_g=(W_L+W_C)\sin\beta
+$$
+
+$$
+F_{ext}=F_p+(W_L+W_C)(\sin\beta+\mu\cos\beta)
+$$
+
+**Consideraciones de la fuerza gravitacional:**
+
+Cuando la carga se encuentra en una posición horizontal, el término de la fuerza gravitacional es igual a cero.
+
+**Cálculo del torque reflejado en el motor:**
+
+Para determinar el torque reflejado en el motor, se considera el trabajo realizado por la fuerza externa:
+
+$$
+Work=F_{ext}\frac{1}{(2\pi p)}\Delta\theta
+$$
+
+También se puede expresar como:
+
+$$
+Work=F_{ext}\Delta x
+$$
+
+**Torque reflejado en el sistema:**
+
+El torque reflejado en el motor es:
+
+$$
+T_{load \rightarrow in}=F_{ext}\frac{1}{N_S}
+$$
+
+Tomando en cuenta la eficiencia del sistema, el torque reflejado final es:
+
+$$
+T_{load \rightarrow in}=\frac{F_{ext}}{\eta N_S}
+$$
 
 ---
 
