@@ -220,6 +220,8 @@ Convierte **movimiento rotacional** en **movimiento lineal** mediante el acoplam
 
 La velocidad tangencial del piñón se transmite a la cremallera, generando movimiento lineal. Este sistema es ampliamente usado en la industria debido a su facilidad de diseño, montaje sencillo y capacidad para obtener relaciones de transmisión altas en espacios reducidos.
 
+![Figura de prueba](IMAGES/piñonc.png)
+
 ### Relación de Transmisión
 
 Se obtiene al comparar la velocidad del motor con la velocidad de la carga.
