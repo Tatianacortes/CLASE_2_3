@@ -51,7 +51,11 @@ $$
 $$
 
 
-### Simulación en Simsulink
+### Simulación en Simulink
+
+![Figura de prueba](IMAGES/simulink.png)
+![Figura de prueba](IMAGES/graficasimulink.png)
+
 
 ### Inercia Reflejada
 
@@ -203,6 +207,9 @@ Cuando se trabaja en sistema inglés:
 $J_{screw} = \frac{\pi \cdot 0.36 \cdot 140000 \cdot 0.00182^4}{32} = 5.42 \times 10^{-8} \, \text{Kgm}$
 
 ### Simulación simscpae multibody
+
+![Figura de prueba](IMAGES/simscape.png)  
+
 ---
 
 ## Piñón-Cremallera
