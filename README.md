@@ -51,7 +51,7 @@ $$
 $$
 
 
-### Simulación en Simscape
+### Simulación en Simsulink
 
 ### Inercia Reflejada
 
