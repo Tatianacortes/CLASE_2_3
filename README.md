@@ -168,6 +168,41 @@ $$
 T_{load \rightarrow in}=\frac{F_{ext}}{\eta N_S}
 $$
 
+### Ejemplo
+
+
+- Una carga de 50 kg debe ser posicionada usando un tornillo esferado de acero con 0.14 kg/cm³ de densidad, 0.182 cm de diámetro, 36 cm de longitud, 0.75 cm/rev de paso y 90% de eficiencia. El carro pesa 0.23 kg.  
+  Calcule la inercia reflejada por la transmisión hacia su eje de entrada.
+
+La inercia reflejada sería:
+
+$J_{ref}^{trans} = J_{screw} + J_{load-in} + J_{carriage-in}$
+
+$= J_{screw} + \frac{1}{\eta N_s^2}\left(\frac{W_L + W_C}{g}\right)$
+
+Donde:
+
+$N_s = 2\pi p$
+
+$= 2\pi \cdot \frac{1}{0.75} = 8.38$
+
+Se calcula suponiendo que el tornillo es un cilindro alargado:
+
+$J_{ref}^{trans} = J_{screw} + \frac{1}{\eta N_s^2}\left(\frac{W_L + W_C}{g}\right)$
+
+Por lo tanto:
+
+$J_{ref}^{trans} = 5.42 \times 10^{-8} + \frac{1}{0.9 \cdot 8.38^2}\left(\frac{50 + 0.23}{9.89}\right) = 8.1 \, \text{Kgm}$
+
+Para el tornillo:
+
+$J_{screw} = \frac{\pi L \rho D^4}{32g}$
+
+Cuando se trabaja en sistema inglés:
+
+$J_{screw} = \frac{\pi \cdot 0.36 \cdot 140000 \cdot 0.00182^4}{32} = 5.42 \times 10^{-8} \, \text{Kgm}$
+
+
 ---
 
 ## Piñón-Cremallera
