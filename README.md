@@ -1,4 +1,4 @@
-# CLASE_2_3
+# CLASE 2 III CORTE
 # Sistemas de Transmisión 
 
 ## Tornillo Sin Fin
@@ -224,7 +224,14 @@ La velocidad tangencial del piñón se transmite a la cremallera, generando movi
 
 ### Relación de Transmisión
 
-Se obtiene al comparar la velocidad del motor con la velocidad de la carga.
+Se obtiene al comparar la velocidad del motor con la velocidad de la carga.  
+
+$N=\frac{Velocidad\ motor}{Velocidad\ carga}$
+
+$V_{rack}=r_{pinion}\omega_{pinion}$
+
+$N_{RP}=\frac{1}{r_{pinion}}$
+
 
 ### Simulación en Simscape
 
@@ -232,13 +239,22 @@ Se obtiene al comparar la velocidad del motor con la velocidad de la carga.
 
 Se calcula según la masa y la configuración del sistema.
 
+$J_{ref}^{trans}=J_{pinion}+J_{load\rightarrow in}+J_{carriage\rightarrow in}$
+
+$=J_{pinion}+\frac{1}{\eta N_{RP}^2}\left(\frac{W_L+W_C}{g}\right)$
+
 ### Torque de Carga
 
-Depende de la fuerza necesaria para mover la carga.
+Depende de la fuerza necesaria para mover la carga.  
+
+$F_{ext}=F_f+F_g+F_p$
+
+$T_{load\rightarrow in}=\frac{F_{ext}}{\eta N_{RP}}$
+
 
 ### Simulación en Simscape Multibody
 
-Permite analizar el comportamiento dinámico del sistema de manera más detallada.
+
 
 ---
 
