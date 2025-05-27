@@ -14,27 +14,80 @@ El objetivo de un tornillo sin fin es convertir **movimiento rotacional** (usual
 - **Dientes Trapezoidales** (usualmente con ángulo de 29° o 30°):  
   - Permiten mover cargas mucho más altas.
   - La cápsula se acopla mejor y las fuerzas se distribuyen de manera más uniforme a lo largo de todos los dientes, lo que mejora la resistencia y la capacidad de carga.
+ 
+![Figura de prueba](IMAGES/rectotra.png)
 
 ### Tipos de Cápsulas en Tornillos Sin Fin
 
 - **Tornillo ACME**:  
   - La cápsula es una tuerca con rosca interna que se desplaza a lo largo de la trayectoria helicoidal del tornillo.
-  - Es una opción más económica, pero presenta mayor fricción.
+  - Permiten transmitir grandes potencias.
+  - La eficiencia de los tornillos ACME está entre el 35% y el 85%.
 
 - **Cápsula con Esferas Recirculantes (Ball Screw)**:  
   - Incorpora esferas dentro de la cápsula para reducir la fricción y mejorar la distribución de las fuerzas.
-  - Permite transportar cargas más altas de forma más eficiente, aunque su costo es más elevado.
+  - Permiten transmitir grandes potencias.
+  - Actúan como rodamientos, lo que permite reducir el backlash (juego mecánico) y la fricción.
+  - Tienen eficiencias que oscilan entre el 85% y el 95%.
+  - Este mecanismo convierte el torque del motor en fuerza sobre la carga.
 
 ### Características Importantes para la Selección
 
 - **Cabeceo (Pitch)**: Número de revoluciones necesarias para que la cápsula se desplace una distancia determinada (por ejemplo, 1 metro o 1 pulgada en sistema inglés).
 - **Paso (Lead)**: Distancia que se desplaza la cápsula con una revolución del tornillo (en metros o pulgadas, según el sistema).
 
+### Relación de transmisión
+
+$$
+\Delta \theta = 2 \pi p \Delta x
+$$
+
+$$
+\frac{\Delta \theta}{\Delta x} = 2 \pi p
+$$
+
+$$
+\frac{\Delta \theta / \Delta t}{\Delta x / \Delta t} = \frac{\text{Velocidad motor}}{\text{Velocidad carga}} = \frac{\dot{\theta}}{\dot{x}} = 2 \pi p
+$$
+
+
 ### Simulación en Simscape
 
 ### Inercia Reflejada
 
 Se calcula a partir de la energía cinética de la carga en movimiento. Dado que el movimiento es lineal, existe una velocidad asociada. En el caso del tornillo, la **inercia reflejada es despreciable**, ya que está conectado directamente al motor y no hay una transformación adicional debido al mecanismo.
+
+**Energía Cinética:**
+
+$$
+KE = \frac{1}{2} m \dot{x}^2
+$$
+
+**Relación de transmisión:**
+
+$$
+\frac{\dot{\theta}}{\dot{x}} = 2 \pi p
+$$
+
+**Energía Cinética (velocidad angular):**
+
+$$
+KE = \frac{1}{2} \frac{m}{(2 \pi p)^2} \dot{\theta}^2
+$$
+
+**Inercia Reflejada:**
+
+$$
+J_{ref} = \frac{m}{(2 \pi p)^2}
+$$
+
+o también:
+
+$$
+J_{ref} = \frac{m}{N_s^2}
+$$
+
+
 
 ### Torque Reflejado
 
