@@ -263,33 +263,60 @@ $T_{load\rightarrow in}=\frac{F_{ext}}{\eta N_{RP}}$
 
 Sistema que convierte una **entrada rotacional** en **movimiento lineal**. Puede tener más de dos poleas para transmitir el movimiento mediante una banda.
 
+![Figura de prueba](IMAGES/banda.png)
+
 ### Relación de Transmisión
 
 Depende del tamaño de las poleas y la configuración del sistema.
+
+$N=\frac{Velocidad\ motor}{Velocidad\ carga}$
+
+$V_{belt}=r_{ip}\omega_{ip}$
+
+$N_{BD}=\frac{1}{r_{ip}}$
+
 
 ### Inercia Reflejada
 
 Se calcula en función de la masa en movimiento y las características de la banda y las poleas.
 
+$J_{ref}^{trans}=J_{IP}+J_{load\rightarrow in}+J_{carriage\rightarrow in}+J_{belt\rightarrow in}+J_{LP}$
+
+$=2J_p+\frac{1}{\eta N_{BD}^2}\left(\frac{W_L+W_C+W_{belt}}{g}\right)$
+
+$J_{IP}=J_{LP}=J_p$
+
+
 ### Torque de Carga
 
 Se determina según la fuerza requerida para desplazar la carga a lo largo de la banda.
 
----
+$T_{load\rightarrow in}=\frac{F_{ext}}{\eta N_{BD}}$
+
+## 
 
 ## Bandas con Más de Dos Rodillos
 
-
-
 ### Relación de Transmisión
 
-
+pasame esto a formato markdown para github con $ sin espacios entre ecuaciones
 
 ### Inercia Reflejada
 
+$J_{ID\rightarrow in}=\frac{J_{ID}}{\eta \left( \frac{r_{ID}}{r_{DR}} \right)^2}$
+
+$J^{trans}_{ref}=J_{DR}+J_{load \rightarrow in}+J_{belt \rightarrow in}+J_{ID \rightarrow in}+J_{BR \rightarrow in}$
+
+$=J_{DR}+\frac{1}{\eta N^2_{CV}}\left( \frac{W_L+W_{belt}}{g} \right)+\frac{J_{ID}}{\eta \left( \frac{r_{ID}}{r_{DR}} \right)^2}+\frac{J_{BR}}{\eta \left( \frac{r_{BR}}{r_{DR}} \right)^2}$
 
 
 ### Torque de Carga
+
+$T_{load \rightarrow in}=\frac{F_{ext}}{\eta N_{CV}}$
+
+$F_{ext}=F_p+(W_L+W_{belt})(\sin{\beta}+\mu \cos{\beta})$
+
+Aplicando caso general donde la banda tiene un ángulo.
 
 
 
