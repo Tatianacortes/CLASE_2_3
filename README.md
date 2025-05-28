@@ -305,7 +305,8 @@ pasame esto a formato markdown para github con $ sin espacios entre ecuaciones
 
 $J_{ID\rightarrow in}=\frac{J_{ID}}{\eta \left( \frac{r_{ID}}{r_{DR}} \right)^2}$
 
-$J^{trans}_{ref}=J_{DR}+J_{load \rightarrow in}+J_{belt \rightarrow in}+J_{ID \rightarrow in}+J_{BR \rightarrow in}$
+$J_{\text{ref}}^{\text{trans}} = J_{\text{DR}} + J_{\text{load} \rightarrow \text{in}} + J_{\text{belt} \rightarrow \text{in}} + J_{\text{ID} \rightarrow \text{in}} + J_{\text{BR} \rightarrow \text{in}}$
+
 
 $=J_{DR}+\frac{1}{\eta N^2_{CV}}\left( \frac{W_L+W_{belt}}{g} \right)+\frac{J_{ID}}{\eta \left( \frac{r_{ID}}{r_{DR}} \right)^2}+\frac{J_{BR}}{\eta \left( \frac{r_{BR}}{r_{DR}} \right)^2}$
 
