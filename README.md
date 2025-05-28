@@ -319,6 +319,50 @@ $F_{ext}=F_p+(W_L+W_{belt})(\sin{\beta}+\mu \cos{\beta})$
 
 Aplicando caso general donde la banda tiene un ángulo.
 
+##
+
+### Ejemplos adicionales
+
+#### Ejemplo 1
+
+- Se desea mover una carga de 40 kg utilizando un tornillo de bolas de acero. El tornillo tiene un diámetro de 0.2 cm, una longitud de 45 cm, densidad del material de 0.14 kg/cm³, un paso de 1.2 cm/rev y una eficiencia del 87%. El carro asociado tiene una masa de 0.35 kg.  
+  Calcule la inercia reflejada hacia el eje del motor.
+
+Fórmulas utilizadas:
+
+$J_{ref}^{trans} = J_{screw} + \frac{1}{\eta N_s^2}\left(\frac{W_L + W_C}{g}\right)$
+
+Donde:
+
+$N_s = 2\pi \cdot \frac{1}{p} = 2\pi \cdot \frac{1}{1.2} = 5.24$
+
+Para el tornillo, suponiendo forma cilíndrica:
+
+$J_{screw} = \frac{\pi L \rho D^4}{32g} = \frac{\pi \cdot 0.45 \cdot 140000 \cdot 0.002^4}{32} = 7.8 \times 10^{-8} \, \text{Kgm}$
+
+Entonces:
+
+$J_{ref}^{trans} = 7.8 \times 10^{-8} + \frac{1}{0.87 \cdot 5.24^2}\left(\frac{40 + 0.35}{9.81}\right) = 0.181 \, \text{Kgm}$
+
+---
+
+#### Ejemplo 2
+
+- Un sistema de posicionamiento requiere mover una carga de 60 kg con un tornillo esférico de aluminio, con densidad de 0.0027 kg/cm³, diámetro de 0.3 cm, longitud de 38 cm, paso de 0.8 cm/rev, y eficiencia del 91%. El carro pesa 0.65 kg.  
+  Determine la inercia total reflejada hacia el eje de entrada.
+
+Cálculo de la relación de paso:
+
+$N_s = 2\pi \cdot \frac{1}{0.8} = 7.85$
+
+Inercia del tornillo:
+
+$J_{screw} = \frac{\pi \cdot 0.38 \cdot 2700 \cdot 0.003^4}{32} = 2.72 \times 10^{-7} \, \text{Kgm}$
+
+Luego:
+
+$J_{ref}^{trans} = 2.72 \times 10^{-7} + \frac{1}{0.91 \cdot 7.85^2}\left(\frac{60 + 0.65}{9.81}\right) = 0.098 \, \text{Kgm}$
+
 
 
 
