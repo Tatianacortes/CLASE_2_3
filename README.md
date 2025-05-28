@@ -233,8 +233,9 @@ $V_{rack}=r_{pinion}\omega_{pinion}$
 $N_{RP}=\frac{1}{r_{pinion}}$
 
 
-### Simulación en Simscape
-
+### Simulación en Simulink
+![Figura de prueba](IMAGES/simupiñon.png)  
+![Figura de prueba](IMAGES/grafipiñon.png)
 ### Inercia Reflejada
 
 Se calcula según la masa y la configuración del sistema.
@@ -253,7 +254,7 @@ $T_{load\rightarrow in}=\frac{F_{ext}}{\eta N_{RP}}$
 
 
 ### Simulación en Simscape Multibody
-
+![Figura de prueba](IMAGES/multibodypiñon.png)
 
 
 ---
